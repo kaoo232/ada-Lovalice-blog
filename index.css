@@ -1,0 +1,160 @@
+header {
+    text-align: center;
+    color: #AD8F8F;
+    background-color: #2B1F2E;
+    font-family: "Jim Nightshade", cursive;
+    font-weight: 400;
+    height: auto;
+    margin-top: 0;
+}
+
+.title {
+    font-size: 2em;
+    text-decoration-thickness: 2px;
+    margin: 0;
+}
+
+#p {
+    color: #988D9B;
+    font-family: "Keania One", sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+body {
+    background-color: #59425F;
+    margin: 0;
+    padding: 0;
+    font-family: "Jim Nightshade", cursive;
+}
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.text {
+    margin: 20px 19px 20px -20px;
+    background-color: #AD8F8F;
+    padding: 30px;
+    border-radius: 1px;
+    border: 2px dotted black;
+    margin-left: 0;
+}
+
+.p2 {
+    font-family: "Licorice", cursive;
+    font-weight: 400;
+}
+
+.photo {
+    width: 278.92px;
+    height: 386.14px;
+    margin-top: 25px;
+    margin-right: 0px;
+    border-radius: 5px;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 60%;
+    max-width: 1200px;
+    position: relative;
+    background-color: #362B39;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.text2 {
+    flex: 1;
+    margin: 100px 100px 100px 100px;
+    padding: 10px;
+    color: #AD8F8F;
+    border-radius: 5px;
+    font-family: "Milonga", serif;
+    font-weight: 400;
+    padding-right: 20px;
+}
+
+.q1 {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 600px;
+    /* Limits the maximum width of the image container */
+    margin: 20px 350px;
+    box-sizing: border-box;
+}
+
+#image-2 {
+    flex-shrink: 0;
+    width: auto;
+    height: 500px;
+    border-radius: 5px;
+    /* Centers the image vertically */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5em;
+    }
+    #img-div {
+        max-width: 90%;
+    }
+    .container,
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text,
+    .text2 {
+        margin: 20px 0;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    #main {
+        flex-direction: column;
+        padding: 40px;
+    }
+    .container,
+    .container2 {
+        flex-direction: row;
+    }
+    #img-div {
+        max-width: 80%;
+    }
+    #header {
+        padding: 30px;
+    }
+    .text,
+    .text2 {
+        margin: 20px;
+    }
+}
